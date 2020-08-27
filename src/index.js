@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { DataLayer } from './Datalayer';
+
+import reducer, { intialState } from './reducer'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataLayer initialState={intialState} reducer={reducer}>
+      <App />
+    </DataLayer>
   </React.StrictMode>,
   document.getElementById('root')
 );
