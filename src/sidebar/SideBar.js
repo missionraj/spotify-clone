@@ -25,8 +25,8 @@ function SideBar() {
             <strong className="sidebar__title">PLAYLISTS</strong>
             <hr />  
             {
-                playlists?.items?.map(playlist=>{
-                    return <SidebarOption text={playlist.name} />      
+                playlists?.items?.map((playlist,index)=>{
+                    return <SidebarOption text={playlist.name} key={index}/>      
                 })
             }
         </div>
