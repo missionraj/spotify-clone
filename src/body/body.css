@@ -5,7 +5,9 @@
     height: 100vh;
     padding: 30px;
     color: #fff;
-    overflow-y: overlay;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge  hide scrollbar*/
+    scrollbar-width: none;  /* Firefox hide scrollbar*/
 
 }
 .body::-webkit-scrollbar{
