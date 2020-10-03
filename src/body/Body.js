@@ -28,7 +28,7 @@ function Body() {
             </div>
             <div className="body__songs"> 
                 <div className="body__icons">
-                    <PlayCircleFilledIcon className="body__shuffle" onClick={playMusic} />
+                    <PlayCircleFilledIcon className="body__shuffle"  />
                     <FavoriteIcon fontSize="large" />
                     <MoreHorizIcon />
                 </div>
