@@ -34,7 +34,6 @@ function App() {
           })
         })
         spotify.getPlaylist('7aXC5Y4vlZhp601oUm1P9k').then(res=>{
-          console.log('discover weekly ...', res);
           dispatch({
             type:'SET_DISCOVER_WEEKLY',
             discover_weekly : res

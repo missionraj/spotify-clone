@@ -9,9 +9,12 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 import SongRow from './songrow/SongRow';
+
+
+
 function Body() {
-    let [ { discover_weekly }, dispatch] = useDataLayerValue();
-    console.log('discover weekly ...', discover_weekly);
+    let [ { discover_weekly }] = useDataLayerValue();
+   
     return (
         <div className="body">
             <Header /> 
@@ -25,7 +28,7 @@ function Body() {
             </div>
             <div className="body__songs"> 
                 <div className="body__icons">
-                    <PlayCircleFilledIcon className="body__shuffle" />
+                    <PlayCircleFilledIcon className="body__shuffle" onClick={playMusic} />
                     <FavoriteIcon fontSize="large" />
                     <MoreHorizIcon />
                 </div>
